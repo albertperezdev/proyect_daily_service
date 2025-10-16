@@ -1,1 +1,46 @@
-<p>about-us-page works!</p>
+<app-hero
+  title="Daily service"
+  description="We connect bilingual Latin American talent with U.S. companies. At Daily
+        Services, we help organizations build stable remote teams with
+        professionals from Colombia and across the region. We don’t do gig work
+        or faceless outsourcing—we create long-term work relationships that
+        drive real results."
+  img="assets/logo_trazado_light.svg"
+/>
+
+<div class="m-0 divider p-5"></div>
+
+<!-- Card Component-->
+<div class="ml-11 p-5 pt-10 item- flex-col lg:flex-row">
+  <h1 class="text-5xl font-bold">Your Ideal Team Starts Here!</h1>
+  <br />
+
+  <p class="py-5">
+    We focus on uniting companies and professionals who share the vision of
+    long-term growth together.
+  </p>
+</div>
+<div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:p-9 xl:grid-cols-3">
+  @for (item of itemsCard; track $index) {
+  <app-card
+    [tittle]="item.tittle"
+    [description]="item.description"
+    [icon]="item.icon"
+  />
+  }
+</div>
+
+<div class="m-0 divider p-5"></div>
+
+<app-hero-imgbg
+  backgroundImg="background-image: url(assets/imgs/hero-about-back.jpg);
+    background-size: cover;
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    border-radius: var(--radius-4xl);"
+  title="Our Approach"
+  description=" We act as your trusted outsourcing partner for support and growth roles.
+        We assemble dedicated teams aligned with your goals, cadence, and
+        culture."
+/>
+<div class="m-0 divider p-5"></div>
