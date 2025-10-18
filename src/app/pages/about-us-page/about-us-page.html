@@ -1,3 +1,26 @@
+<div class="mx-5 md:mx-20 my-12 rounded-2xl overflow-hidden shadow-xl">
+  <div
+    class="hero min-h-[70vh]"
+    style="
+      background-image: url('assets/imgs/heros/pexels-seven11nash-380769.jpg');
+    "
+  >
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">
+          Unlock world-class talent from Colombia
+        </h1>
+        <p class="mb-5">
+          Our mission is simple: to connect you with bilingual Colombian
+          professionals who bring talent, dedication, and personality to your
+          team — all while keeping your operations efficient and cost-effective.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <app-hero
   title="Daily service"
   description="We connect bilingual Latin American talent with U.S. companies. At Daily
@@ -8,39 +31,50 @@
   img="assets/logo_trazado_light.svg"
 />
 
-<div class="m-0 divider p-5"></div>
+<div class="m-0 divider px-5"></div>
 
-<!-- Card Component-->
-<div class="ml-11 p-5 pt-10 item- flex-col lg:flex-row">
-  <h1 class="text-5xl font-bold">Your Ideal Team Starts Here!</h1>
-  <br />
+<app-hero-imgbg
+  title="Why choose"
+  titleSpan="daily services"
+  description="We deliver exceptional talent with heart and precision."
+/>
 
-  <p class="py-5">
-    We focus on uniting companies and professionals who share the vision of
-    long-term growth together.
-  </p>
-</div>
-<div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:p-9 xl:grid-cols-3">
+<app-cards-img />
+
+<div class="m-0 divider pt-30 px-5"></div>
+
+<
+
+<section
+  class="flex flex-col items-center justify-center py-16 md:py-20 text-center"
+>
+  <div class="max-w-2xl">
+    <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">
+      Find Outstanding Colombian Talent
+    </h1>
+    <p class="text-base-content/80 text-lg md:text-xl">
+      Access a diverse pool of skilled experts ready to elevate your business.
+      We match you with professionals who bring passion and expertise.
+    </p>
+  </div>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 px-20 rounded-2xl">
   @for (item of itemsCard; track $index) {
   <app-card
     [tittle]="item.tittle"
-    [description]="item.description"
     [icon]="item.icon"
+    [description]="item.description"
   />
   }
 </div>
 
-<div class="m-0 divider p-5"></div>
+<div class="m-0 divider pt-10 md:pb-15 xl:pb-15 px-5"></div>
 
 <app-hero-imgbg
-  backgroundImg="background-image: url(assets/imgs/hero-about-back.jpg);
-    background-size: cover;
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
-    border-radius: var(--radius-4xl);"
-  title="Our Approach"
-  description=" We act as your trusted outsourcing partner for support and growth roles.
-        We assemble dedicated teams aligned with your goals, cadence, and
-        culture."
+  title="Simple, All-Inclusive Pricing
+"
+  description="Enjoy peace of mind with a flat monthly rate that includes:
+"
 />
-<div class="m-0 divider p-5"></div>
+
+<app-tabs />

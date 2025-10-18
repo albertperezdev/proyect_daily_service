@@ -1,0 +1,22 @@
+<div class="px-5 md:px-20 xl:px-20">
+  <div class="tabs p-2 tabs-box bg-base-200">
+    @for (card of tabs; track $index) {
+    <input
+      type="radio"
+      name="my_tabs_6"
+      class="tab"
+      [aria-label]="card.keyWord"
+      [checked]="card.checked"
+    />
+    <div class="tab-content bg-base-100 border-base-300 p-6">
+      <!--Contenido-->
+      <app-tab-card
+        [img]="card.img"
+        [title]="card.title"
+        [keyWord]="card.keyWord"
+        [description]="card.description"
+      />
+    </div>
+    }
+  </div>
+</div>

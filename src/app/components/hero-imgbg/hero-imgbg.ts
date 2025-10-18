@@ -6,7 +6,7 @@ import { Component, input } from '@angular/core';
   templateUrl: './hero-imgbg.html',
 })
 export class HeroImgbg {
-  backgroundImg = input.required<string>();
   title = input.required<string>();
+  titleSpan = input();
   description = input.required<string>();
 }

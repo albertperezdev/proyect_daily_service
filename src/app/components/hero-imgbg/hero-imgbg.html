@@ -1,14 +1,13 @@
-<div class="hero min-h-70 bg-base-200" [style]="backgroundImg()">
-  <div class="hero-overlay rounded-4xl"></div>
-
-  <div
-    class="hero-content text-neutral-content text-center justify-center md:justify-end md:text-left md:w-full"
-  >
-    <div class="max-w-md text-center md:text-left">
-      <h1 class="mb-5 text-5xl font-bold">{{ title() }}</h1>
-      <p class="mb-5">
-        {{ description() }}
-      </p>
-    </div>
+<section
+  class="flex flex-col items-center justify-center py-10 md:py-20 text-center"
+>
+  <div class="max-w-2xl">
+    <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">
+      {{ title() }}
+      <span class="text-base-content font-black">{{ titleSpan() }}</span>
+    </h1>
+    <p class="text-base-content/80 text-lg md:text-xl">
+      {{ description() }}
+    </p>
   </div>
-</div>
+</section>
