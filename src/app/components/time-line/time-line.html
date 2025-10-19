@@ -1,0 +1,21 @@
+<div class="join join-vertical bg-base-100 w-full pl-5">
+  @for (item of sections ; track $index) {
+
+  <div class="collapse collapse-arrow join-item border border-base-300">
+    <input type="radio" class="peer" name="my-accordion-4" />
+
+    <div
+      class="collapse-title font-semibold flex items-center gap-3 text-base-content"
+    >
+      <i [class]="item.icon"></i>
+      {{ item.title }}
+    </div>
+
+    <div class="collapse-content text-sm">
+      <p>
+        {{ item.span }}
+      </p>
+    </div>
+  </div>
+  }
+</div>

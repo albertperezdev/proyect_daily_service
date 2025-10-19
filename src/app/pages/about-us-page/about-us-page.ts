@@ -4,9 +4,10 @@ import { Card } from '../../components/card/card';
 import { HeroImgbg } from '../../components/hero-imgbg/hero-imgbg';
 import { Tabs } from '../../components/tabs/tabs';
 import { CardsImg } from '../../components/cards-img/cards-img';
+import { TimeLine } from '../../components/time-line/time-line';
 @Component({
   selector: 'app-about-us-page',
-  imports: [Hero, Card, Tabs, CardsImg, HeroImgbg],
+  imports: [Hero, Card, Tabs, CardsImg, HeroImgbg, TimeLine],
   templateUrl: './about-us-page.html',
 })
 export default class AboutUsPage {

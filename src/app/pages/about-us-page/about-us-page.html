@@ -31,7 +31,7 @@
   img="assets/logo_trazado_light.svg"
 />
 
-<div class="m-0 divider px-5"></div>
+<div class="m-0 divider pt-20 px-5"></div>
 
 <app-hero-imgbg
   title="Why choose"
@@ -41,9 +41,7 @@
 
 <app-cards-img />
 
-<div class="m-0 divider pt-30 px-5"></div>
-
-<
+<div class="m-0 divider pt-20 px-5"></div>
 
 <section
   class="flex flex-col items-center justify-center py-16 md:py-20 text-center"
@@ -68,7 +66,7 @@
   }
 </div>
 
-<div class="m-0 divider pt-10 md:pb-15 xl:pb-15 px-5"></div>
+<div class="m-0 divider pt-20 px-5"></div>
 
 <app-hero-imgbg
   title="Simple, All-Inclusive Pricing
@@ -80,3 +78,27 @@
 <app-tabs />
 
 <div class="m-0 divider pt-10 md:pb-15 xl:pb-15 px-5"></div>
+
+<div class="hero p-5">
+  <div
+    class="hero-content w-full grid gap-6 lg:gap-10 lg:grid-cols-2 items-center"
+  >
+    <!-- Texto: primero en mobile, segundo en desktop -->
+    <div
+      class="order-1 lg:order-2 w-full max-w-md mx-auto text-center lg:text-left"
+    >
+      <h1 class="text-4xl md:text-5xl font-bold text-primary leading-tight">
+        What Makes Us Different
+      </h1>
+      <p class="mt-4 text-base-content/70">
+        We bring together bilingual talent, continuous training, and
+        people-first management to deliver reliable performance—day after day.
+      </p>
+    </div>
+
+    <!-- Collapse (app-time-line): segundo en mobile, primero en desktop -->
+    <app-time-line
+      class="order-2 lg:order-1 w-full max-w-xl mx-auto lg:mx-0"
+    ></app-time-line>
+  </div>
+</div>
