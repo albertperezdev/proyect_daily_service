@@ -1,0 +1,18 @@
+<section class="mx-5 md:mx-20 my-12">
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <!-- 1 -->
+    @for (card of card; track card.icon) {
+    <article
+      class="card bg-base-200 shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary"
+    >
+      <div class="card-body items-center text-center">
+        <i [ngClass]="[card.icon, 'text-3xl text-primary mb-3']"></i>
+        <h3 class="card-title text-lg font-semibold">{{ card.tittle }}</h3>
+        <p class="text-base-content/80 text-sm">
+          {{ card.description }}
+        </p>
+      </div>
+    </article>
+    }
+  </div>
+</section>

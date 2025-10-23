@@ -1,5 +1,5 @@
-<div class="px-5 md:px-20 md:pb-5 xl:px-20 xl-5">
-  <div class="tabs p-2 tabs-box bg-base-200 pb-3 px-3">
+<div class="px-5 md:px-20 xl:px-20 md:pb-5 xl:pb-5">
+  <div class="tabs tabs-box bg-base-200 p-3 md:p-4 2xl:p-5">
     @for (card of tabs; track $index) {
     <input
       type="radio"
@@ -8,8 +8,7 @@
       [aria-label]="card.keyWord"
       [checked]="card.checked"
     />
-    <div class="tab-content bg-base-100 border-base-300 p-6">
-      <!--Contenido-->
+    <div class="tab-content bg-base-100 border-base-300 p-6 md:p-8 2xl:p-10">
       <app-tab-card
         [img]="card.img"
         [title]="card.title"

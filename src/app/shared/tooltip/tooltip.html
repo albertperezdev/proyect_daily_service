@@ -1,15 +1,13 @@
-<div class="fixed bottom-10 right-10 z-50 tooltip">
-  <div class="tooltip-content">
-    <div class="animate-pulse text-white -rotate-5 text-2xl font-black">
-      Contact!
-    </div>
-  </div>
-  <button class="btn btn-xl btn-circle btn-primary shadow-lg">
+<div class="fixed bottom-10 right-10 z-50 tooltip" [ngClass]="tooltipSide">
+  <button
+    class="btn btn-xl btn-circle btn-primary shadow-lg"
+    [attr.data-tip]="tipText"
+  >
     <a
-      href="https://api.whatsapp.com/send/?phone=13059847502&text=Hola+daily+services&type=phone_number&app_absent=0 "
-      class="fa-brands fa-whatsapp fa-xl"
+      href="https://api.whatsapp.com/send/?phone=13059847502&text=Hola+Daily+Services&type=phone_number&app_absent=0"
       target="_blank"
-    >
-    </a>
+      rel="noopener"
+      class="fa-brands fa-whatsapp fa-xl text-base-100"
+    ></a>
   </button>
 </div>

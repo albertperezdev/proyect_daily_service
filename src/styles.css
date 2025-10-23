@@ -1,7 +1,16 @@
 @import "tailwindcss";
-@plugin "daisyui"{
+@source "./src/**/*.{html,ts}";
+
+@theme {
+  --breakpoint-xs: 480px;
+  --breakpoint-2xl: 1600px;
+  --breakpoint-3xl: 2000px;
+
 }
 
+@plugin "daisyui"{
+}
+@source inline("tooltip-top tooltip-left");
 
 
 
@@ -81,7 +90,7 @@
   --color-success-content: oklch(97% 0.021 166.113);
   --color-warning: oklch(90% 0.182 98.111);
   --color-warning-content: oklch(42% 0.095 57.708);
-  --color-error: oklch(57% 0.245 27.325);
+   --color-error: oklch(63% 0.237 25.331);
   --color-error-content: oklch(97% 0.013 17.38);
   --radius-selector: 2rem;
   --radius-field: 2rem;

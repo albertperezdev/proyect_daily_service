@@ -1,29 +1,41 @@
 <article
-  class="card bg-base-100 shadow-sm border border-base-300 overflow-hidden md:h-97 xl:h-100"
+  class="card bg-base-100 shadow-sm border border-base-300 overflow-hidden"
 >
-  <div class="grid grid-cols-1 lg:grid-cols-2 xl:w-350 h-full">
-    <!-- Imagen a la izquierda -->
-    <figure class="bg-base-200 h-56 lg:h-auto">
-      <div class="w-full h-full lg:min-h-[340px]">
+  <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 h-full">
+    <figure class="bg-base-200">
+      <div
+        class="w-full h-[260px] md:h-[320px] lg:h-[400px] 2xl:h-[480px] 3xl:h-[520px]"
+      >
         <img
           class="w-full h-full object-cover object-center"
           [src]="img()"
-          alt="Team 3"
+          alt="Tab image"
         />
       </div>
     </figure>
 
-    <!-- Contenido a la derecha (ajustado proporcionalmente) -->
-    <div class="card-body flex flex-col justify-center px-8 py-10">
-      <span class="text-sm font-semibold text-base-content/70 mb-2">{{
-        keyWord()
-      }}</span>
-      <h3 class="text-2xl font-semibold leading-snug mb-3">
+    <div
+      class="card-body px-6 md:px-8 2xl:px-10 py-6 md:py-8 2xl:py-10 lg:max-h-[420px] lg:overflow-y-auto [scrollbar-width:thin] gap-4"
+    >
+      <span class="text-sm font-semibold text-base-content/70">
+        {{ keyWord() }}
+      </span>
+
+      <h3 class="text-2xl md:text-[28px] font-semibold leading-snug">
         {{ title() }}
       </h3>
-      <p class="text-base-content/70 text-sm mb-6">
+
+      <p class="text-base-content/70 text-sm md:text-base">
         {{ description() }}
       </p>
+
+      <a
+        href="https://api.whatsapp.com/send/?phone=13059847502&text=Hola+daily+services&type=phone_number&app_absent=0"
+        target="_blank"
+        role="button"
+        class="btn btn-primary w-fit self-start"
+        >More information</a
+      >
     </div>
   </div>
 </article>

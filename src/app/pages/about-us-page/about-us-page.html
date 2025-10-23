@@ -1,17 +1,20 @@
-<div class="mx-5 md:mx-20 my-12 rounded-2xl overflow-hidden shadow-xl">
+<div class="mx-5 md:mx-20 3xl:mx-24 my-12 rounded-2xl overflow-clip shadow-2xl">
   <div
-    class="hero min-h-[70vh]"
+    class="hero min-w-full min-h-[70vh]"
     style="
       background-image: url('assets/imgs/heros/pexels-seven11nash-380769.jpg');
+      background-position: center;
+      background-size: cover;
     "
   >
     <div class="hero-overlay bg-opacity-60"></div>
+
     <div class="hero-content text-neutral-content text-center">
-      <div class="max-w-md">
-        <h1 class="mb-5 text-5xl font-bold">
+      <div class="max-w-md 3xl:max-w-lg">
+        <h1 class="mb-5 text-5xl 3xl:text-[2.9rem] font-bold leading-tight">
           Unlock world-class talent from Colombia
         </h1>
-        <p class="mb-5">
+        <p class="mb-5 text-base 3xl:text-[1.05rem]">
           Our mission is simple: to connect you with bilingual Colombian
           professionals who bring talent, dedication, and personality to your
           team — all while keeping your operations efficient and cost-effective.
@@ -43,19 +46,11 @@
 
 <div class="m-0 divider pt-20 px-5"></div>
 
-<section
-  class="flex flex-col items-center justify-center py-16 md:py-20 text-center"
->
-  <div class="max-w-2xl">
-    <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">
-      Find Outstanding Colombian Talent
-    </h1>
-    <p class="text-base-content/80 text-lg md:text-xl">
-      Access a diverse pool of skilled experts ready to elevate your business.
-      We match you with professionals who bring passion and expertise.
-    </p>
-  </div>
-</section>
+<app-hero-imgbg
+  title="Find Outstanding Colombian Talent"
+  description="Access a diverse pool of skilled experts ready to elevate your business. We match you with professionals who bring passion and expertise."
+/>
+
 <div
   class="grid grid-cols-1 md:grid-cols-3 gap-4 px-5 md:px-20 xl:px-20 rounded-2xl"
 >
@@ -85,9 +80,9 @@
   <div
     class="hero-content w-full grid gap-6 lg:gap-10 lg:grid-cols-2 items-center"
   >
-    <!-- Texto: primero en mobile, segundo en desktop -->
+    <!-- Texto: primero en mobile, primero en desktop -->
     <div
-      class="order-1 lg:order-2 w-full max-w-md mx-auto text-center lg:text-left"
+      class="order-1 lg:order-1 w-full max-w-md mx-auto text-center lg:text-left"
     >
       <h1 class="text-4xl md:text-5xl font-bold text-primary leading-tight">
         What Makes Us Different
@@ -98,9 +93,28 @@
       </p>
     </div>
 
-    <!-- Collapse (app-time-line): segundo en mobile, primero en desktop -->
+    <!-- Collapse: segundo en mobile, segundo en desktop -->
     <app-time-line
-      class="order-2 lg:order-1 w-full max-w-xl mx-auto lg:mx-0"
+      class="order-2 lg:order-2 w-full max-w-xl mx-auto lg:mx-0"
     ></app-time-line>
   </div>
 </div>
+
+<section class="px-5 md:mx-20 my-20">
+  <div
+    class="rounded-2xl bg-linear-to-r from-primary to-primary/70 text-base-100 text-center px-10 py-16 shadow-lg dark:text-white"
+  >
+    <h2 class="text-4xl font-bold mb-4">Ready to build your dream team?</h2>
+    <p class="text-base-100/90 mb-8 max-w-2xl mx-auto dark:text-white">
+      Chat directly with our specialists on WhatsApp — it only takes one message
+      to start.
+    </p>
+    <a
+      href="https://api.whatsapp.com/send/?phone=13059847502&text=Hola+daily+services&type=phone_number&app_absent=0"
+      target="_blank"
+      class="btn bg-base-100 text-primary font-semibold text-lg gap-2 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_#00ff99] dark:bg-white dark:text-primary dark:hover:shadow-[0_0_20px_#00ff99]"
+    >
+      <i class="fa-brands fa-whatsapp text-2xl"></i> Start Chat
+    </a>
+  </div>
+</section>
